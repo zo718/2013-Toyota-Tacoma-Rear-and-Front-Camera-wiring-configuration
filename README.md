@@ -412,6 +412,7 @@ Isolation relay 87a -------------> Not used
 ------------------------------------------------------------------------
 
 # Final Combined Diagram
+[![Final Diagram_v2](assets/Two_cameras_wiring_final.png)](https://github.com/zo718/2013-Toyota-Tacoma-Rear-and-Front-Camera-wiring-configuration/blob/main/assets/Two_cameras_wiring_final.png)
 
 ``` text
                        2013 TOYOTA TACOMA
