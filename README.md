@@ -359,55 +359,39 @@ Final configuration:
 
 # Final Wiring
 
-## ACC Power
+## Power, Ground, and Trigger Wiring
 
-``` text
-ACC switched +12 V
-        |
-        +----> Anytime switch RED
-        +----> Front camera +
-        +----> Rear camera +
-        +----> Isolation relay terminal 30
-```
+![Power, ground, and isolation relay wiring](assets/final-wiring-power-and-trigger.png)
 
-## Grounds
+-   **ACC switched +12 V** feeds the Power Adapter Cable, the Anytime
+    switch RED, the isolation relay terminal 30, and (downstream, not
+    pictured in this crop) front/rear camera +.
+-   **Ground** converges at the chassis ground bolt: Anytime switch
+    BLACK, isolation relay terminal 85, and the camera grounds.
+-   **Factory mirror / Reverse +12 V** (tapped at the mirror's trigger
+    wire) feeds isolation relay terminal 86.
+-   **Manual trigger:** isolation relay terminal 87 and the Anytime
+    switch ORANGE both land on the same node feeding AINAVI G14 /
+    REAR CAM CONTROL — this is the isolation relay described in
+    [Issue 3](#issue-3-factory-mirror-reverse-12-v-triggered-ainavi-but-recreated-backfeed-when-joined-to-orange).
+-   Terminal **87a** and the switch's BLUE/GRAY wires are unused and
+    insulated (marked with the red X).
 
-``` text
-Ground
-   |
-   +----> Anytime switch BLACK
-   +----> Front camera -
-   +----> Rear camera -
-   +----> Isolation relay terminal 85
-```
+## Video Selection and Camera Wiring
 
-## Manual Trigger
+![Video selection and camera power/ground wiring](assets/final-wiring-video-and-cameras.png)
 
-``` text
-Anytime ORANGE ---> AINAVI G14 / Rear Cam Control
-```
-
-## Video Selection
-
-``` text
-Anytime GREEN ---> Anytime video selector relay
-```
-
-``` text
-Front RCA ----\
-               >---- Anytime selector ----> AINAVI camera RCA input
-Rear RCA -----/
-```
-
-## Automatic Reverse Trigger
-
-``` text
-Factory mirror / Reverse +12 V ---> Isolation relay 86
-ACC +12 V ------------------------> Isolation relay 30
-Isolation relay 87 --------------> AINAVI G14
-Isolation relay 85 --------------> Ground
-Isolation relay 87a -------------> Not used
-```
+-   **Anytime switch GREEN** (teal wire) feeds the Anytime video
+    switching relay, selecting between the front and rear camera RCA
+    feeds into the AINAVI's rear-camera RCA input.
+-   **Front and rear camera power** comes from ACC switched +12 V, not
+    from the reverse circuit — see
+    [Issue 4](#issue-4-manual-rear-showed-camera-disconnected).
+-   **Camera grounds** return to the same chassis ground bolt shown
+    above.
+-   The **Reverse Car light** wires are shown disconnected (red X) —
+    nothing from this harness taps the factory reverse-light circuit
+    directly.
 
 ------------------------------------------------------------------------
 
