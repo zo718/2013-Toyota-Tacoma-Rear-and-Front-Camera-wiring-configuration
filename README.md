@@ -414,56 +414,6 @@ Isolation relay 87a -------------> Not used
 # Final Combined Diagram
 [![Final Diagram_v2](assets/Two_cameras_wiring_final.png)](https://github.com/zo718/2013-Toyota-Tacoma-Rear-and-Front-Camera-wiring-configuration/blob/main/assets/Two_cameras_wiring_final.png)
 
-``` text
-                       2013 TOYOTA TACOMA
-                  FINAL CAMERA CONFIGURATION
-
-
-                         SWITCHED ACC +12 V
-                                |
-             +------------------+------------------+
-             |                  |                  |
-             v                  v                  v
-       SWITCH RED        FRONT CAMERA +      REAR CAMERA +
-             |
-             +---------------------------------------+
-                                                     |
-                                                     v
-                                              RELAY TERMINAL 30
-
-
-FACTORY MIRROR /
-REVERSE +12 V -------------------------------> RELAY 86
-
-GROUND --------------------------------------> RELAY 85
-
-                                              RELAY 87
-                                                 |
-                                                 +---------+
-                                                           |
-                                                           v
-SWITCH ORANGE -----------------------------------------> AINAVI G14
-                                                    Rear Cam Control
-
-
-SWITCH GREEN
-     |
-     v
-ANYTIME VIDEO SELECTOR
-     ^
-     |
-     +------------- FRONT CAMERA RCA
-     |
-     +------------- REAR CAMERA RCA
-     |
-     v
-AINAVI REAR CAMERA RCA INPUT
-
-
-ISOLATION RELAY 87a ------------ NOT USED
-
-REAR RCA SMALL RED WIRE --------- NOT USED
-```
 
 ------------------------------------------------------------------------
 
